@@ -12,10 +12,10 @@ package Metier;
 public class Auteur {
     private String Nom;
     private String Prenom;
-    private String AnneeNaissance;
-    private String AnneeDeces;
+    private int AnneeNaissance;
+    private int AnneeDeces;
 
-    public Auteur(String Nom, String Prenom, String AnneeNaissance, String AnneeDeces) {
+    public Auteur(String Nom, String Prenom, int AnneeNaissance, int AnneeDeces) {
         this.Nom = Nom;
         this.Prenom = Prenom;
         this.AnneeNaissance = AnneeNaissance;
@@ -30,11 +30,11 @@ public class Auteur {
         return Prenom;
     }
 
-    public String getAnneeNaissance() {
+    public int getAnneeNaissance() {
         return AnneeNaissance;
     }
 
-    public String getAnneeDeces() {
+    public int getAnneeDeces() {
         return AnneeDeces;
     }
     
@@ -44,7 +44,7 @@ public class Auteur {
 
     @Override
     public String toString() {
-        return "Auteur{" + "Nom=" + Nom + ", Prenom=" + Prenom + ", AnneeNaissance=" + AnneeNaissance + ", AnneeDeces=" + AnneeDeces + '}';
+        return Nom + " " + Prenom + " " + AnneeNaissance + "-" + AnneeDeces;
     }
     
 }

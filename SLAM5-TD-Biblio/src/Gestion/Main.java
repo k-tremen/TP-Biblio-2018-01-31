@@ -48,7 +48,7 @@ public class Main {
                     i++;
                 }
                 fieldID = 0;
-                lesAuteurs.add(new Metier.Auteur(tab[0], tab[1], tab[2], tab[3]));
+                lesAuteurs.add(new Metier.Auteur(tab[0], tab[1], Integer.parseInt(tab[2]), Integer.parseInt(tab[3])));
             }
             for (int i = 0; i < lesAuteurs.size(); i++) {
                 System.out.println(lesAuteurs.get(i));
